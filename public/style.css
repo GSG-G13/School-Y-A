@@ -1,4 +1,11 @@
-main{
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #f2f2f2;
+
+  }
+  main{
     display: flex;
     align-items: flex-start;
 }
@@ -26,12 +33,15 @@ padding: 2px 16px;
 }
 .side-bar{
 width: 25%;
-background-color: antiquewhite;
+height: 100%;
+background-color: #f2f2f2;
 }
 .cards{
 width: 75%;
 background-color: #f2f2f2;
 padding: 20px;
+border-left: solid 2px #bab7b7;
+
 
 }
 .cards li{
@@ -117,4 +127,45 @@ background-color: #45a049;
     text-align: left;
     background-color: #04AA6D;
     color: white;
+  }
+
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
   }
