@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>header</h1></header>
+
+<main>
+    <div class="side-bar">
+        <ul>
+            <li><a href="#" class="link">Add teacher</a></li>
+            <li><a href="#" class="link">Add Student</a></li>
+            <li><a href="#" class="link">Add Subject</a></li>
+        </ul>
+    </div>
+    <div class="cards"> 
+      <h1>Add Student</h1>
+      <form action="/action_page.php">
+        <label for="fname">Student teacher</label>
+        <input type="text" id="fname" name="firstname" placeholder="Student Name..">
+    
+        <label for="lname">Student Birth Day</label>
+        <input type="date" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Subject</label>
+        <select id="country" name="country">
+          <option value="1">Arabic</option>
+          <option value="2">English</option>
+          <option value="3">Matmatic</option>
+        </select>
+      
+        <input type="submit" value="Submit">
+      </form>
+      <h1>Students</h1>
+      <table id="customers">
+        <tr>
+          <th>Student Name</th>
+          <th>Birth Day</th>
+          <th>Subject</th>
+          <th>Edit - DEl</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+          <td>Edit - DEl</td>
+        </tr>
+        <tr>
+          <td>Berglunds snabbköp</td>
+          <td>Christina Berglund</td>
+          <td>Sweden</td>
+          <td>Edit - DEl</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+          <td>Edit - DEl</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+          <td>Edit - DEl</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+          <td>Edit - DEl</td>
+        </tr>
+        <tr>
+          <td>Königlich Essen</td>
+          <td>Philip Cramer</td>
+          <td>Germany</td>
+          <td>Edit - DEl</td>
+
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+          <td>Edit - DEl</td>
+        </tr>
+       
+      </table>
+</div>
+</main>
+<footer style="width: 100%;"><h1>footer</h1></footer>
+</body>
+</html> 
