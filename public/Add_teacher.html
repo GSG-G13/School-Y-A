@@ -1,86 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>header</h1></header>
 
-</head>
-<body>
-<header><h1>header</h1></header>
-
-<main>
-    <div class="side-bar">
-      <div class="sidebar">
-        <a class="active" href="index.html">Home</a>
-        <a href="Add_teacher.html">Add Teacher</a>
-        <a href="Add_student.html">Add Student</a>
-        <a href="#">Add Subject</a>
-        <a href="#">About</a>
+    <main>
+      <div class="side-bar">
+        <div class="sidebar">
+          <a class="active" href="index.html">Home</a>
+          <a href="Add_teacher.html">Add Teacher</a>
+          <a href="Add_student.html">Add Student</a>
+          <a href="#">Add Subject</a>
+          <a href="#">About</a>
+        </div>
       </div>
-    </div>
-    <div class="cards"> 
-      <h1>Add Teacher</h1>
-      <form action="/action_page.php">
-        <label for="fname">Add teacher</label>
-        <input type="text" id="fname" name="firstname" placeholder="teacher Name..">
-    
-        <label for="lname">Teacher E-mail</label>
-        <input type="text" id="lname" name="lastname" placeholder="E-mail..">
+      <div class="cards">
+        <h1>Add Teacher</h1>
+        <form action="/teacher" method="post">
+          <label>Add teacher</label>
+          <input type="text" name="name" value="" placeholder="name" />
 
-        <label for="lname">Teacher Adress</label>
-        <input type="text" id="lname" name="lastname" placeholder="Teacher Adress..">
+          <label>Teacher E-mail</label>
+          <input type="text" name="email" placeholder="E-mail.." />
 
-    
-        <label for="country">Subject</label>
-        <select id="country" name="country">
-          <option value="1">Arabic</option>
-          <option value="2">English</option>
-          <option value="3">Matmatic</option>
-        </select>
-        <input type="submit" value="Submit">
-      </form>
-      <h1>Teachers</h1>
-      <table id="customers">
-        <tr>
-          <th>Student Name</th>
-          <th>Adress</th>
-          <th>Subject</th>
-          <th>email</th>
-          <th>Edit - DEl</th>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-          <td>asajhjkhkj@gmail.com</td>
-          <td>Edit - DEl</td>
-        </tr>
-        <tr>
-          <td>Berglunds snabbköp</td>
-          <td>Christina Berglund</td>
-          <td>Sweden</td>
-          <td>email</td>
-          <td>Edit - DEl</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-          <td>email</td>
-          <td>Edit - DEl</td>
-        </tr>
-        <tr>
-          <td>Ernst Handel</td>
-          <td>Roland Mendel</td>
-          <td>Austria</td>
-          <td>email</td>
-          <td>Edit - DEl</td>
-        </tr>
+          <label>Teacher Adress</label>
+          <input
+            type="text"
+            id="lname"
+            name="address"
+            placeholder="Teacher Adress.."
+          />
 
-       
-      </table>
-</div>
-</main>
-<footer style="width: 100%;"><h1>footer</h1></footer>
-</body>
-</html> 
+          <label>Subject</label>
+          <select id="sub" name="subject">
+            <option value="Arabic">Arabic</option>
+            <option value="English">English</option>
+            <option value="Matmatic">Matmatic</option>
+          </select>
+          <button id="submitTeacher">Submit</button>
+        </form>
+        <h1>Teachers</h1>
+        <table id="customers">
+          <tr>
+            <th>Teacher Name</th>
+            <th>email</th>
+            <th>adress</th>
+            <th>subject</th>
+            <th>Edit - DEl</th>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer style="width: 100%"><h1>footer</h1></footer>
+    <script src="./app2.js"></script>
+  </body>
+</html>
