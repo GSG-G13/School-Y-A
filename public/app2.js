@@ -1,19 +1,4 @@
 
-submitTeacher.addEventListener('click', () => {
-    fetch("/teacher")
-        .then(data => data.json())
-        .then((data) => {
-            console.log(data);
-            showData(data);
-        });
-})
-
-fetch("/teacher")
-    .then(data => data.json())
-    .then((data) => {
-        console.log(data);
-        showDataFomTeacher(data);
-    });
 const showDataFomTeacher = (data) => {
     data.forEach(ele => {
         const tr = document.createElement("tr");
@@ -26,7 +11,7 @@ const showDataFomTeacher = (data) => {
         td2.textContent = ele.email;
         td3.textContent = ele.address;
         td4.textContent = ele.subject;
-        td5.textContent = "Edit - DEl";
+        td5.textContent = "Edit - Delete";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tr.appendChild(td3);
@@ -35,3 +20,9 @@ const showDataFomTeacher = (data) => {
         customers.appendChild(tr);
     })
 }
+fetch("/teacher")
+    .then(data => data.json())
+    .then((data) => {
+        console.log(data);
+        showDataFomTeacher(data);
+    });
