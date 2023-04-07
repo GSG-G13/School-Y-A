@@ -26,10 +26,22 @@
         <h1>Add Student</h1>
         <form action="/student" method="post">
           <label>Student Name</label>
-          <input type="text" name="name" value="" placeholder="name" />
+          <input
+            type="text"
+            name="name"
+            value=""
+            placeholder="name"
+            class="nameStu"
+          />
 
           <label>Student Birth Day</label>
-          <input type="text" name="birthdate" value="" placeholder="name" />
+          <input
+            type="text"
+            name="birthdate"
+            value=""
+            placeholder="name"
+            class="birthDate"
+          />
           <label>Subject</label>
           <select id="subb" name="subject">
             <option value="Science">Science</option>
@@ -40,6 +52,7 @@
 
           <button id="sub">submit</button>
         </form>
+        <button id="Update">Update</button>
         <h1>Students</h1>
         <table id="customers">
           <tr>

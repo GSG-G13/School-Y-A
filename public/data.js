@@ -1,5 +1,6 @@
 const customers = document.querySelector("#customers");
 
+
 const ShowAll = (data) => {
     data.forEach(ele => {
         const tr = document.createElement("tr");

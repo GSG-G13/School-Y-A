@@ -26,10 +26,21 @@
         <h1>Add Teacher</h1>
         <form action="/teacher" method="post">
           <label>Add teacher</label>
-          <input type="text" name="name" value="" placeholder="name" />
+          <input
+            type="text"
+            name="name"
+            value=""
+            placeholder="name"
+            class="teacherName"
+          />
 
           <label>Teacher E-mail</label>
-          <input type="text" name="email" placeholder="E-mail.." />
+          <input
+            type="text"
+            name="email"
+            placeholder="E-mail.."
+            class="teacherEmail"
+          />
 
           <label>Teacher Adress</label>
           <input
@@ -37,6 +48,7 @@
             id="lname"
             name="address"
             placeholder="Teacher Adress.."
+            class="teacherAdress"
           />
 
           <label>Subject</label>
@@ -48,6 +60,7 @@
           </select>
           <button id="sub">Submit</button>
         </form>
+        <button id="Update">Update</button>
         <h1>Teachers</h1>
         <table id="customers">
           <tr>
@@ -55,7 +68,7 @@
             <th>email</th>
             <th>adress</th>
             <th>subject</th>
-            <th>Edit - DEl</th>
+            <th><i class="fa fa-trash-alt"></i><i class="fa fa-edit"></i></th>
           </tr>
         </table>
       </div>
