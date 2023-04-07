@@ -1,5 +1,6 @@
 const { getData } = require("../../database/queries/student/getData");
 const { postData } = require("../../database/queries/student/postData");
+const { deleteData } = require("../../database/queries/student/deleteData");
 
 const getStudent = (req, res) => {
     getData()
@@ -16,7 +17,14 @@ const postStudent = (req, res) => {
         .catch(err => console.log("err:", err));
 }
 
+const deleteStudent = (req, res) => {
+    deleteData(req.params.id)
+        .then(() => res.redirect("/Add_student.html"))
+        .catch(err => console.log("err:", err))
+}
+
 module.exports = {
     getStudent,
-    postStudent
+    postStudent,
+    deleteStudent
 };

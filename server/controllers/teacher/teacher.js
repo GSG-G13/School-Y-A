@@ -1,8 +1,8 @@
-const { getDataa } = require("../../database/queries/teacher/getData");
-const { postDataa } = require("../../database/queries/teacher/postData");
+const { getData } = require("../../database/queries/teacher/getData");
+const { postData } = require("../../database/queries/teacher/postData");
 
 const getDataTeacher = (req, res) => {
-    getDataa()
+    getData()
         .then(result => res.json(result.rows))
         .catch(err => console.log("err:", err));
 
@@ -10,7 +10,7 @@ const getDataTeacher = (req, res) => {
 
 const postDataTeacher = (req, res) => {
     const TeacherInfo = req.body;
-    postDataa(TeacherInfo)
+    postData(TeacherInfo)
         .then(() => res.redirect("/Add_teacher.html"))
         .catch(err => console.log("err:", err));
 }

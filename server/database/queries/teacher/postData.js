@@ -1,6 +1,6 @@
 const dbConnection = require("../../config/connection");
 
-const postDataa = userData => {
+const postData = userData => {
 
     const { name, email, address, subject } = userData;
     console.log(userData);
@@ -11,4 +11,4 @@ const postDataa = userData => {
     return dbConnection.query(sql);
 }
 
-module.exports = { postDataa }
+module.exports = { postData }
