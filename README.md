@@ -2,7 +2,7 @@
 
 # The Schema of DataBase
 
-![Screenshot 2023-04-05 105745](https://user-images.githubusercontent.com/87650778/230730873-31464713-c8d1-499a-b09e-024ffaab26b8.png)
+![Capture](https://user-images.githubusercontent.com/87650778/230730951-da4aafb3-5400-4fff-8c1d-cdc05aea6563.PNG)
 
 
 # Run APP :
