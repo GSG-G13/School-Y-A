@@ -1,4 +1,4 @@
-# School-Y-A
+# School management
 
 # The Schema of DataBase
 
